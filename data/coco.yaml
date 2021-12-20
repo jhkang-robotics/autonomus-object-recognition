@@ -1,0 +1,13 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: /home/kjh/workspace/Car_object_Award/ScaledYOLOv4/data/images/train  # 118k images
+val: /home/kjh/workspace/Car_object_Award/ScaledYOLOv4/data/images/valid  # 5k images
+test: /home/kjh/workspace/Car_object_Award/ScaledYOLOv4/data/images/test  # 20k images for submission to https://competitions.codalab.org/competitions/20794
+
+
+# number of classes
+nc: 4
+
+# class names
+names: ['Vehicle', 'Pedestrian','TrafficLight','TrafficSign']
+
+
