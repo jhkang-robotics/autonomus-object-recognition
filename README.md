@@ -22,6 +22,8 @@ python -m torch.distributed.run --nproc_per_node 2 train.py --batch 2 --data coc
 # train을 하면 runs/train/exp/weights 폴더에 best.pt, last.pt 가중치 파일 생성
 # best.pt 파일을 weights/ 폴더에 복사
 # --source * 에 추론하고자 하는 데이터 폴더 경로 지정
+# weight 파일의 용량이 큰 문제로 인해 github에 업로드 불가. 때문에 https://drive.google.com/file/d/1QeC7VOMYUoV3m6f4sUzaa-Qd4S1_cjtg/view?usp=sharing 다음 링크에서 학습된 weight 파일 다운 후 재헌 가능 
+
 4. Infrance: 
 
 python detect.py --source data/test/ --weights weights/best.pt --save-txt --save-crop --device 0,1 --img-size 1280
